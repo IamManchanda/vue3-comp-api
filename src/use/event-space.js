@@ -1,13 +1,13 @@
 import { reactive, computed, toRefs } from "vue";
 
 export default () => {
-  const event = reactive({
+  const reactivity = reactive({
     capacity: 3,
     attending: ["Tim", "Bob", "Joe"],
     spacesLeft: computed(() => {
-      return event.capacity - event.attending.length;
+      return reactivity.capacity - reactivity.attending.length;
     }),
   });
-  const increaseCapacity = () => (event.capacity += 1);
-  return { ...toRefs(event), increaseCapacity };
+  const increaseCapacity = () => (reactivity.capacity += 1);
+  return { ...toRefs(reactivity), increaseCapacity };
 };
