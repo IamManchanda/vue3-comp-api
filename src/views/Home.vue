@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <p>Spaces left: {{ spacesLeft }} out of {{ capacity }}</p>
     <button @click="increaseCapacity">Increase Capacity</button>
     <h2>Attending</h2>

@@ -1,22 +1,13 @@
 <template>
-  <Suspense>
-    <template #default>
-      <profile-card-main />
-    </template>
-    <template #fallback>
-      <profile-card-skeleton />
-    </template>
-  </Suspense>
+  <profile-card />
 </template>
 
 <script>
-import ProfileCardMain from "@/components/profile-card/main";
-import ProfileCardSkeleton from "@/components/profile-card/skeleton";
+import ProfileCard from "@/components/profile-card";
 
 export default {
   components: {
-    ProfileCardMain,
-    ProfileCardSkeleton,
+    ProfileCard,
   },
 };
 </script>
