@@ -20,5 +20,3 @@ export const {
   increaseCapacity,
 } = useEventSpace();
 </script>
-
-<style lang="scss"></style>
